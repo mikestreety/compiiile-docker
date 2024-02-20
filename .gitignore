@@ -1,0 +1,7 @@
+# Local package testing
+node_modules
+package-lock.json
+
+# MacOs Files
+.DS_Store
+._*
