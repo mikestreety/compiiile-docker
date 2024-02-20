@@ -7,7 +7,7 @@
     "url": "git+ssh://git@github.com/mikestreety/compiiile-in-docker.git"
   },
   "author": "Mike Street",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mikestreety/compiiile-in-docker/issues"
   },
