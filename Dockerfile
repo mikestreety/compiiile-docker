@@ -8,10 +8,12 @@ LABEL org.opencontainers.image.licenses=MIT
 RUN npm install -g @compiiile/compiiile@2.7.4
 
 # Copy boot script
+COPY --chmod=0755 ./scripts/image_baseline.sh /image_baseline.sh
 COPY --chmod=0755 ./scripts/image_baseline.sh /run.sh
 
 # Set the workdir and entry script
 WORKDIR /app
+
 CMD ["/bin/sh", "-c", "/run.sh"]
 
 FROM image_baseline AS image_cloudflare
