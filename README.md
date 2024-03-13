@@ -7,7 +7,7 @@ For local use or in CI
 ## Build static docs
 
 ```
-docker run -v $(pwd):/app compiiile
+docker run -v $(pwd):/app ghcr.io/mikestreety/compiiile-in-docker:latest
 ```
 
 ## Build and publish to Cloudflare
@@ -23,5 +23,5 @@ docker run \
 	-e CLOUDFLARE_ACCOUNT_ID=[account id] \
 	-e CLOUDFLARE_API_TOKEN=[cloudflare token from step1] \
 	-v $(pwd):/app\
-	compiiilecloud
+	ghcr.io/mikestreety/compiiile-in-docker-cloudflare:latest
 ```
